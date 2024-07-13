@@ -1,0 +1,178 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbar{
+  height: 60px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.logo{
+  background-image: url("pics/Myntra\ Logo.jpg");
+  background-size:contain;
+  height: 50px;
+  width: 50px;
+  margin-left: 3px;
+  margin-top: 2px;
+  margin-right: 10px;
+}
+.navsearch{
+  display: inline-flex;
+  color: black;
+  align-items: center;
+  height: 35px;
+  width: 600px;
+  border-radius: 4px;
+}
+p{
+  font-size: larger;
+}
+.add-items{
+    display:flex;
+    justify-items: center;
+    align-items: center;
+}
+.outfit-item {
+    border: 2px solid #999;
+    width: 100px;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+  #canvas {
+    width: calc(100% - 2em);
+    height: 80vh;
+    border: 2px solid blue;
+    touch-action: none;
+    margin: 1em;
+    margin-top: 3rem;
+    cursor: url('pics/pencil.png');
+  }
+  .selected-items{
+    z-index: 50;
+  }
+  .clr:nth-child(1) {
+    background-color: #000;
+  }
+  .clr:nth-child(2) {
+    background-color: red;
+  }
+  .clr:nth-child(3) {
+    background-color: orange;
+  }
+  .clr:nth-child(4) {
+    background-color: yellow;
+  }
+  .clr:nth-child(5) {
+    background-color: rgb(0, 128, 98);
+  }
+  .clr:nth-child(6) {
+    background-color: blue;
+  }
+  .clr:nth-child(7) {
+    background-color: purple;
+  }
+  .clr:nth-child(8) {
+    background-color: white;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+  
+  .second {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .btn button {
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    margin-left: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: green;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  #clear{
+    background-color: red;
+  }
+  
+  nav ul li a button:hover,
+  nav ul li button:hover {
+    background-color: transparent;
+    border: 1px solid pink;
+    color: pink;
+  }
+  
+  .nav {
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #ceceef;
+    padding: 10px;
+    border-radius: 25px;
+    border: 2px solid white;
+    box-shadow: inset 2px white;
+    transition: opacity 0.5s;
+  }
+  
+  .nav div,
+  button,
+  input {
+    margin: 0.2rem;
+  }
+  
+  .clr {
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px solid #ce44ce;
+    transition: transform 0.5s;
+  }
+  
+  .clr:hover {
+    transform: scale(0.8);
+  }
+  
+  .active {
+    transform: scale(0.8);
+  }
+  
+  input[type="color"] {
+    width: 60px;
+    height: 40px;
+    color: white;
+  }
+  
+  #brushSize {
+    background: linear-gradient(to right, #000428 0%, #004e92 100%);
+    height: 7px;
+    outline: none;
+    appearance: none;
+    cursor: ew-resize;
+    border-radius: 5px;
+    border: 3px solid white;
+    accent-color: white;
+  }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="ocstyle.css">
+    <title>Myntra WeForShe 2024</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div style="display: flex; align-items: center; justify-content: center;"><div class="logo"></div>Myntra</div>
+        <div href="index.html"><i class="fa-solid fa-house"></i> Home</div>
+        <div>About Us</div>
+        <div>
+            <input class="navsearch" placeholder="Search products">
+            <i style="border-radius: 5px; padding: 0.5rem; background-color: black" class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <a style="color: white;" href="outfitcreator.html"><i class="fa-solid fa-medal"></i> Badges</a>
+        <a style="color: white;" href="influencer.html"><i class="fa-solid fa-coins"></i> Points</a>
+        <a style="color: white;" href="user.html"><i class="fa-regular fa-user"></i> User</div></a>
+    </nav>
+    <div style="padding: 25px; background-color: #ccc;">
+        <h1 style="margin-bottom: 20px;">Outfit Creator</h1>
+
+        <p style="margin: 10px 0 10px;">Create your outfit using the space below or choose one of the basic templates to work on:</p>
+        <div class="add-items" style="margin-bottom: 20px;">
+        <div class="outfit-item" onclick="selectItem('T-Shirt')">T-Shirt</div>
+        <div class="outfit-item" onclick="selectItem('Jeans')">Jeans</div>
+        <div class="outfit-item" onclick="selectItem('Shorts')">Shorts</div>
+        <div class="outfit-item" onclick="selectItem('Dress')">Dress</div>
+        <div class="outfit-item" onclick="selectItem('Skirt')">Skirt</div>
+        </div>
+        
+        <h1>Your Outfit:</h1>
+
+        <canvas id="canvas" style="background-color: beige; margin-top: 90px;">
+            <img id="selected-items" style="color: black;"></img>
+        </canvas>
+        <div class="nav">
+            <div class="clr" data-clr="#000"></div>
+            <div class="clr" data-clr="red"></div>
+            <div class="clr" data-clr="orange"></div>
+            <div class="clr" data-clr="yellow"></div>
+            <div class="clr" data-clr="rgb(0, 128, 98)"></div>
+            <div class="clr" data-clr="blue"></div>
+            <div class="clr" data-clr="purple"></div>
+            <div class="clr" data-clr="#fff"></div>
+            <input type="color" value="#0000FF" id="favcolor">
+            <input type="color" value="#FFFFFF" id="bgcolor" aria-label="Background Color">
+
+            <input type="range" name="brushSize" id="brushSize" value="5" min="1" max="10">
+        </div>
+
+        <div class="btn">
+            <div class="second">
+                <button class="button" id="clear" aria-label="Clear">Clear</button></li>
+                <button class="button" id="save" aria-label="Save">Save</button></li>
+            </div>
+        </div>
+    </div>
+    <script src="ocscript.js"></script>
+</body>
+</html>
