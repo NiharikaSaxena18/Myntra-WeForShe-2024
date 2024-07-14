@@ -38,7 +38,7 @@ body{
     width: 600px;
     border-radius: 4px;
 }
-.share{
+#share-button{
         background-color: #007bff;
         color: #fff;
         border: none;
