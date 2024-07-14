@@ -1,0 +1,247 @@
+/* Reset styles and global styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+}
+/* Banner styles */
+.top-page {
+    padding-top: 60px; /* Adjust as needed */
+}
+
+.banner {
+    text-align: center;
+    padding: 20px;
+    background-color: #212121;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.alert-small {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Main content wrapper */
+.main-content {
+    width: 70%;
+    margin-right: 20px;
+}
+
+.blog-info {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.inner-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.theme h3 {
+    font-size: 1.5em;
+    color: #ff7171;
+    margin-bottom: 10px;
+}
+
+.theme p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+.deadline {
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Previous blogs section */
+.previous-blogs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.blog {
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog p {
+    margin-bottom: 10px;
+}
+
+.read-more {
+    padding: 10px 20px;
+    background-color: #eb9aa5;
+    border-radius: 18px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #ff7171;
+}
+
+.complete-blog {
+    display: none;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 30%; /* Adjust as needed */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard {
+    margin-bottom: 20px;
+}
+
+.leaderboard h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.leaderboard-entry {
+    margin-top: 20px;
+}
+
+.entry {
+    padding: 10px;
+    background-color:aliceblue;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.entry p {
+    margin: 5px 0;
+}
+
+.entry .rank {
+    font-weight: bold;
+    margin-right: 5px;
+    color: #333;
+}
+
+.leaderboard-entry.top-three .entry {
+    background-color:#eb9aa5;
+}
+.initial {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
+    z-index: 1000; /* Ensure it's above other content */
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.logo .fa-solid {
+    margin-right: 5px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav .navsearch {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 960px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .previous-blogs .blog {
+        width: 100%;
+    }
+}
