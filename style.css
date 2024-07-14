@@ -7,6 +7,7 @@ a{
     text-decoration: none;
 }
 .rest{
+    height: 91.9vh;
     font-family:'Poppins','sans-serif';
     background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);
     background: linear-gradient(to right, #ffdde1, #ee9ca7);
