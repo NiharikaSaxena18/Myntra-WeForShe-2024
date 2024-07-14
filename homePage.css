@@ -1,83 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f3f4f6;
-}
-
-.initial {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 5vh;
-    background-color: black;
-    padding: 0 20px;
-    color: white;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-.logo .fa-solid {
-    margin-right: 5px;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    display: flex;
-    align-items: center;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-nav .navsearch {
-    padding: 8px;
-    border: none;
-    border-radius: 5px;
-}
 
 .container {
     display: flex;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f4f6;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    height: 92vh;
-    background: #ee9ca7;  /* fallback for old browsers */
+    height: 90vh;
+    background: #be9cee;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);
     background: linear-gradient(to right, #ffdde1, #ee9ca7);
-}
-
-.weCreated h1 {
-    margin: 20px 0;
-    font-size: 2.5rem;
-    color: #333;
 }
 
 .features {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 25px;
     justify-content: center;
     align-items: center;
     margin: 50px 0;
@@ -117,7 +57,10 @@ nav .navsearch {
 
 .pts-system {
     text-align: center;
-    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
     font-size: 1.2rem;
     color: #333;
 }
@@ -129,21 +72,20 @@ nav .navsearch {
     cursor: pointer;
     color: #fff;
     font-weight: 500;
-    border-radius: 4px;
     font-size: 14px;
     height: 30px;
-    padding: 0 15px;
-    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
-    background: linear-gradient(92.88deg, rgb(69, 94, 181) 9.16%, rgb(86, 67, 204) 43.89%, rgb(103, 63, 215) 64.72%);
-    transition: all 0.5s ease;
+    width: 85px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 .know-more:hover {
-    box-shadow: 0 1px 40px rgba(80, 63, 205, 0.5);
+    transform: translateY(2px);
+    box-shadow: 0 8px 16px rgb(176, 114, 248);
 }
 
 .footer {
-    background-color: rgb(161, 214, 196);
+    background-color: #4fad93;
     text-align: center;
     padding: 10px;
     width: 100%;
