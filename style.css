@@ -91,3 +91,8 @@ button {
     height: 30px;
     width: 125px;
 }
+
+#share-button{
+    width: 155px;
+    background-color: rgb(4, 104, 81);
+}
