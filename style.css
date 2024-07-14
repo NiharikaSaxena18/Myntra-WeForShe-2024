@@ -3,7 +3,10 @@
     margin: 0;
     padding: 0;
 }
-body{
+a{
+    text-decoration: none;
+}
+.rest{
     font-family:'Poppins','sans-serif';
     background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);
     background: linear-gradient(to right, #ffdde1, #ee9ca7);

@@ -158,6 +158,10 @@ h2 {
     background-color: #ff7171;
 }
 
+a{
+    text-decoration: none;
+}
+
 .complete-blog {
     display: none;
 }
