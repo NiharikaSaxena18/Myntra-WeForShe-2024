@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            
+        background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.purchase-details {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.points-display {
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Share Purchase</h1>
+        <div class="share-details">
+            <p>Share this link with your friends:</p>
+            <input type="text" id="share-link" readonly value="http://example.com/share.html?ref=yourID">
+            <button id="copy-button">Copy Link</button>
+        </div>
+        <div class="friend-purchase">
+            <h2>Your Friend's Purchase</h2>
+            <button id="confirm-purchase">I Confirm My Friend Bought This</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const copyButton = document.getElementById('copy-button');
+    const shareLink = document.getElementById('share-link');
+    const confirmPurchaseButton = document.getElementById('confirm-purchase');
+
+    // Copy link to clipboard
+    copyButton.addEventListener('click', () => {
+        shareLink.select();
+        document.execCommand('copy');
+        alert('Link copied to clipboard!');
+    });
+
+    // Confirm friend's purchase
+    confirmPurchaseButton.addEventListener('click', () => {
+        // In a real app, this would involve verifying the friend's purchase
+        // For this example, we'll simulate it by redirecting back with points
+        window.location.href = "purchase.html?points=20";
+    });
+});
+
+    </script>
+</body>
+</html>

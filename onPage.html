@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Page</title>
+    <style>body {
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        /* background-color: #f0f0f0; */
+        margin: 0;
+    }
+
+    .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    
+    .purchase-details {
+        margin-bottom: 20px;
+    }
+    
+    button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+    }
+    
+    .points-display {
+        margin-top: 20px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Purchase</h1>
+        <div class="purchase-details">
+            <p>Item: Awesome Gadget</p>
+            <p>Price: $50</p>
+        </div>
+        <button id="share-button">Share Purchase</button>
+        <div class="points-display">
+            <p>You have <span id="points">0</span> points</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const shareButton = document.getElementById('share-button');
+    const pointsDisplay = document.getElementById('points');
+    let points = 0;
+
+    shareButton.addEventListener('click', () => {
+        window.location.href = "sharePurchase.html";
+    });
+
+    // Function to update points
+    function updatePoints(newPoints) {
+        points += newPoints;
+        pointsDisplay.textContent = points;
+    }
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('points')) {
+        updatePoints(parseInt(urlParams.get('points')));
+    }
+});
+
+    </script>
+</body>
+</html>
