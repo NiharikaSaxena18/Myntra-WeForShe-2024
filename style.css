@@ -4,8 +4,7 @@
     padding: 0;
 }
 body{
-    font-family:'Poppins','sans-serif'
-    background: #be9cee;  /* fallback for old browsers */
+    font-family:'Poppins','sans-serif';
     background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);
     background: linear-gradient(to right, #ffdde1, #ee9ca7);
 }
