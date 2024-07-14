@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background: #be9cee;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+}
 .navbar{
     display: flex;
     justify-content: space-around;
