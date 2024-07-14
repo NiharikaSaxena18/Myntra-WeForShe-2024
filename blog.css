@@ -1,12 +1,41 @@
 /* Reset styles and global styles */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-body {
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar{
+    height: 60px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+    background-image: url("pics/Myntra\ Logo.jpg");
+    background-size:contain;
+    height: 50px;
+    width: 50px;
+    margin-left: 3px;
+    margin-top: 2px;
+    margin-right: 10px;
+}
+.navsearch{
+    display: inline-flex;
+    color: black;
+    align-items: center;
+    height: 35px;
+    width: 600px;
+    border-radius: 4px;
+}
+.rest{
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(to right, #ffdde1, #ee9ca7);
     display: flex;
@@ -25,7 +54,7 @@ body {
 }
 /* Banner styles */
 .top-page {
-    padding-top: 60px; /* Adjust as needed */
+    padding-top: 30px; /* Adjust as needed */
 }
 
 .banner {
