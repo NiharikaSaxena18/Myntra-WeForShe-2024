@@ -117,3 +117,35 @@ a{
     max-height: 80%;
     overflow: auto;
 }
+@media (max-width: 576px) {
+    .features {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .one {
+        width: 90%;
+        height: auto;
+    }
+
+    .image {
+        height: auto;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .one {
+        width: 80%;
+        height: auto;
+    }
+
+    .image {
+        height: auto;
+    }
+}
