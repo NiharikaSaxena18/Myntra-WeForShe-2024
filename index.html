@@ -8,17 +8,53 @@
     <title>Myntra Website</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div style="display: flex; align-items: center; justify-content: center;"><div class="logo"></div>Myntra</div>
-        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
-        <div>About Us</div>
-        <div>
-            <input class="navsearch" placeholder="Search products">
-            <i style="border-radius: 5px; padding: 0.5rem; background-color: black" class="fa-solid fa-magnifying-glass"></i>
+    <header>
+        <nav class="initial">
+            <div class="logo">Myntra</div>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="about.html">About Us</a>
+            <div>
+                <input class="navsearch" placeholder="Search products">
+                <i class="fas fa-search"></i>
+            </div>
+            <a href="outfitcreator.html"><i class="fas fa-medal"></i> Badges</a>
+            <a href="influencer.html"><i class="fas fa-coins"></i> Points</a>
+            <a href="user.html"><i class="far fa-user"></i> User</a>
+        </nav>
+    </header>
+
+    
+    <div class="container">
+        <span class="weCreated">
+            <h1>Explore the new features</h1>
+        </span>
+        <div class="features">
+            <div class="one two">
+                <img class="image" src="homePage images/createOutfit-img.jpg">
+                <div class="info"><b>Create Your Outfit Challenge:</b> Design an outfit and create a trending look under Rs 1000 from Myntra</div>
+            </div>
+            <div class="one">
+                <img class="image blog" src="homePage images/blog-img.jpg">
+                <div class="info"><b>Fashion Blog Writing Contest:</b> Earn badges to avail benefits</div>
+            </div>
+            <div class="one three">
+                <img class="image" src="homePage images/fashionInfluencer-img.jpg">
+                <div class="info"><b>Follow Fashion Influencers:</b> To gain trending fashion insights</div>
+            </div>
+            <div class="one four">
+                <img class="image" src="homePage images/sharePurchase-img.jpg">
+                <div class="info"><b>Share your purchase:</b> Share purchase with your friends to get rewards</div>
+            </div>
         </div>
-        <a style="color: white;" href="outfitcreator.html"><i class="fa-solid fa-medal"></i> Badges</a>
-        <a style="color: white;" href="influencer.html"><i class="fa-solid fa-coins"></i> Points</a>
-        <a style="color: white;" href="user.html"><i class="fa-regular fa-user"></i> User</div></a>
-    </nav>
+        <div class="pts-system">
+            Know more about the points and badges
+            <button class="know-more">Click Here</button>
+        </div>
+        <div class="info-box" style="display: none;"></div>
+    </div>
+
+    <footer class="footer">Created by Tech Titans</footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
